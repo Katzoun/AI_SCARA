@@ -28,6 +28,6 @@ The robot controller (shown below) brings together all the electronic components
 There are two microcontrollers in the SCARA robot controller. The main MCU is the Teensy 4.1, which performs all the kinematic calculations for the robot's movements.
 The reason for choosing the Teensy 4.1 microcontroller for robot motion control was mainly due to its architecture, which is compatible with user-friendly Arduino microcontrollers. The control of the robot peripherals is provided by Arduino Nano. 
 
-<p align="center"><img src="docs/controller.png" height="400"></p>
+<p align="center"><img src="docs/robot controller.png" height="400"></p>
 <p align="center"><img src="docs/schematic controller.png" height="500"></p>
 <p align="center"><img src="docs/schematic robot.png" height="348"></p>
