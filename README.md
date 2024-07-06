@@ -1,1 +1,2 @@
 # AI_SCARA
+test
