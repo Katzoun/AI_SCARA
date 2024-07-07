@@ -45,7 +45,7 @@ For easy interaction with the robot, a user-friendly graphical interface has bee
 
 <p align="center"><img src="docs/gui.png" height="400"></p>
 
-In the lower left corner there is a console where error messages and other information concerning the controller operation are displayed. Below the console there is a command line for manual instruction entering. Manual input is particularly useful when testing additional programmed functionalities that are not represented graphically in the interface. To visually check the robot's position, the interface also includes a dynamic 2D model that can operate in three modes. In Live mode, the model displays the position in which the robot is currently physically located. The remaining modes (Forward and Inverse) are simulation modes and are used to visually represent the forward and inverse kinematics solutions. 
+In the lower left corner there is a console where error messages and other information concerning the controller operation are displayed. Below the console there is a command line for manual instruction input. Manual input is particularly useful when testing additional programmed functionalities that are not represented graphically in the interface. To visually check the robot's position, the interface also includes a dynamic 2D model that can operate in three modes. In Live mode, the model displays the position in which the robot is currently physically located. The remaining modes (Forward and Inverse) are simulation modes and are used to visually represent the forward and inverse kinematics solutions. 
 
 <p align="center"><img src="docs/teach demo.png" height="189"></p>
 
@@ -76,8 +76,9 @@ Again, it should be noted that the measurements made provide only a very basic i
 | Axis range J4           | -190° to +120° |
 | Robot weight         | 17 kg |
 | Controller weight          | 8 kg |
+| Build price | approx. 1500 €| 
 
-<p align="center"><img src="docs/AISCARA_lab.JPG" height="600"></p>
+<p align="center"><img src="docs/AISCARA_lab.JPG" height="500"></p>
 
 ## Contact info
 For more information about this project please contact me on
