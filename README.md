@@ -55,3 +55,30 @@ Within the proposed interface, the SCARA robot can also be easily programmed in 
 ### Establishing communication with the AI.SCARA robot controller
 For successful communication between the personal computer and the controller it is first necessary to connect these units via the USB interface. The "scan ports" button is intended to make it easier to find the ports to which the controller is connected. After pressing the "scan ports" button, the console lists the currently used ports of the personal computer. The user interface cannot yet automatically detect which of these ports the controller is on, so the user must manually enter the port names in the appropriate fields. The process of establishing a connection can be initiated with the "connect" button. The connection process is shown in the figure below.
 <p align="center"><img src="docs/init pth.png" height="250"></p>
+
+## Result
+After successful assembly and debugging, the designed robotic structure was subjected to a series of tests aimed at verifying the basic "metrological" characteristics of the robot. The measurements performed were divided into three main categories - repeatability tests, stiffness tests and complex tests, which are a combination of the previous two. The repeatability of the robot was estimated to be within a few tenths of a millimetre based on the tests performed. 
+Again, it should be noted that the measurements made provide only a very basic idea of the metrological characteristics of the proposed solution. The measurement results are influenced not only by the mechanical design but also by the motion control of the robot. A more precise set of validation tests, including a more advanced statistic evaluation, could be addressed in future work. The table below shows the basic technical parameters of the proposed robot.
+
+| Parameter | Value |
+| ------ | ------ |
+| Horizontal reach (X-Y)  | 400 mm  |
+| Vertical reach (Z)      | 170 mm  |
+| Payload                 | 1 kg    |
+| Repeatability           | tenths of millimetre |
+| Max. speed J1           | 120 °/s |
+| Max. speed J2           | 120 °/s |
+| Max. speed J3           | 80 mm/s |
+| Max. speed J4           | 160 °/s |
+| Axis range J1           | -116° to +125° |
+| Axis range J2           | -129° to +120° |
+| Axis range J3           | 170 mm |
+| Axis range J4           | -190° to +120° |
+| Robot weight         | 17 kg |
+| Controller weight          | 8 kg |
+
+<p align="center"><img src="docs/AISCARA_lab.JPG" height="600"></p>
+
+## Contact info
+For more information about this project please contact me on
+tomas.janousek02@gmail.com
