@@ -23,7 +23,7 @@ Stepper motors with encoders were chosen to drive the robot. The main advantage 
 
 
 
-The robot controller (shown below) brings together all the electronic components necessary for the proper functioning of the SCARA robot - i.e. stepper motor controllers, microcontrollers that run the control system, power supplies and many others. Power is provided by three DC power supplies - LRS-350-36 (CL57 stepper drivers), LRS-100-12 (pneumatic equipment, DM320T driver, internal air compressors etc.) and RS-25-5 (MCUs)
+The robot controller (shown below) brings together all the electronic components necessary for the proper functioning of the AI.SCARA robot - i.e. stepper motor controllers, microcontrollers that run the control system, power supplies and many others. Power is provided by three DC power supplies - LRS-350-36 (CL57 stepper drivers), LRS-100-12 (pneumatic equipment, DM320T driver, internal air compressors etc.) and RS-25-5 (MCUs).
 
 There are two microcontrollers in the SCARA robot controller. The main MCU is the Teensy 4.1, which performs all the kinematic calculations for the robot's movements.
 The reason for choosing the Teensy 4.1 microcontroller for robot motion control was mainly due to its architecture, which is compatible with user-friendly Arduino microcontrollers. The control of the robot peripherals is provided by Arduino Nano. 
@@ -31,3 +31,27 @@ The reason for choosing the Teensy 4.1 microcontroller for robot motion control 
 <p align="center"><img src="docs/robot controller.png" height="400"></p>
 <p align="center"><img src="docs/schematic controller.png" height="500"></p>
 <p align="center"><img src="docs/schematic robot.png" height="348"></p>
+
+## Software
+
+The control software is a key component of the robotic arm. The proposed system simultaneously performs the control and precise synchronization of all four axes of the robot, analytically solves kinematic calculations for maximum computational efficiency, controls the current position of the axes and, last but not least, controls the robot peripherals. 
+**The control software running in the robot controller consists of two parts:**
+
+* [AISCARA teensy board](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_ControlSystem/AISCARA%20teensy%20board)
+* [AISCARA nano board](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_ControlSystem/AISCARA%20nano%20board)
+
+
+For easy interaction with the robot, a user-friendly graphical interface has been created that allows, among other things, simple diagnostics and programming of the robot's movements.
+
+<p align="center"><img src="docs/gui.png" height="400"></p>
+
+In the lower left corner there is a console where error messages and other information concerning the controller operation are displayed. Below the console there is a command line for manual instruction entering. Manual input is particularly useful when testing additional programmed functionalities that are not represented graphically in the interface. To visually check the robot's position, the interface also includes a dynamic 2D model that can operate in three modes. In Live mode, the model displays the position in which the robot is currently physically located. The remaining modes (Forward and Inverse) are simulation modes and are used to visually represent the forward and inverse kinematics solutions. 
+
+<p align="center"><img src="docs/teach demo.png" height="189"></p>
+
+
+Within the proposed interface, the SCARA robot can also be easily programmed in addition to those already mentioned. For most of the instructions, there is a "Teach" button which saves the instruction into the program memory. The entire program is then displayed in a text box to the right of the console. For working with program files, there is a simple file manager in the GUI. Through it you can open already created programs or create completely new ones.
+
+### Establishing communication with the AI.SCARA robot controller
+For successful communication between the personal computer and the controller it is first necessary to connect these units via the USB interface. The "scan ports" button is intended to make it easier to find the ports to which the controller is connected. After pressing the "scan ports" button, the console lists the currently used ports of the personal computer. The user interface cannot yet automatically detect which of these ports the controller is on, so the user must manually enter the port names in the appropriate fields. The process of establishing a connection can be initiated with the "connect" button. The connection process is shown in the figure below.
+<p align="center"><img src="docs/init pth.png" height="250"></p>
