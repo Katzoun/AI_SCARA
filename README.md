@@ -7,10 +7,16 @@ The aim of this project was to design and build a low-cost robot based on the in
 * [AISCARA_ControlSystem](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_ControlSystem) - Source codes for AISCARA control system
 * [AISCARA_GUI](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_GUI) - Source codes for AISCARA user interface
 * [docs](https://github.com/Katzoun/AI_SCARA/tree/main/docs) - Misc documentation files 
-* [stl]() - STL files of robot parts
+* Parts (coming soon)
+
 
 ## Mechanical design
+The mechanical structure of the robot consists of aluminium parts combined with 3D printed parts. The combination of 3D printing and metal machining provides good rigidity and a reasonable price. In addition, all metal components are designed to be manufactured on conventional machines (mill and lathe) without numerical control. The mechanical design also includes the design of the electrical control cabinet. 
 
+The robot design consists of three key units - the stationary base, the first arm and the second arm. 
+<p align="center"><img src="docs/robotbase.png" width="480"></p>
+<p align="center"><img src="docs/firstarm.png" width="480"></p>
+<p align="center"><img src="docs/secondarm.png" width="480"></p>
 
 ## Electrical design
 Stepper motors with encoders were chosen to drive the robot. The main advantage of these motors is their very low purchase price compared to equally powerful servo drives. By controlling stepper motors in a closed loop, better dynamic characteristics can be achieved compared to open-loop stepper motors. Another indisputable advantage of closed-loop control is the possibility of position correction in case of overload. Reference position detection is provided by optical limit switches (TCST2103).
@@ -81,5 +87,5 @@ Again, it should be noted that the measurements made provide only a very basic i
 <p align="center"><img src="docs/AISCARA_lab.JPG" height="500"></p>
 
 ## Contact info
-For more information about this project please contact me on
+For more information and details about this project please contact me on
 tomas.janousek02@gmail.com
