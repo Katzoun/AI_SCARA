@@ -11,7 +11,7 @@ The aim of this project was to design and build a low-cost robot based on the in
 
 
 ## Mechanical design
-The mechanical structure of the robot consists of aluminium parts combined with 3D printed parts. The combination of 3D printing and metal machining provides good rigidity and a reasonable price. In addition, all metal components are designed to be manufactured on conventional machines (mill and lathe) without numerical control. The mechanical design also includes the design of the electrical control cabinet. 
+The mechanical structure of the robot consists of aluminium parts combined with 3D printed parts. The combination of 3D printing and metal machining provides good rigidity and a reasonable price. In addition, all metal components are designed to be manufactured on conventional machines (mill and lathe) without numerical control. The mechanical design also includes the design of the electrical control cabinet. All parts of the robot were designed in Fusion 360.
 
 The robot design consists of three key units - **the stationary base, the first arm and the second arm.** 
 <p align="center"><img src="docs/robotbase.png" width="700"></p>
