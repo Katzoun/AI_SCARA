@@ -7,7 +7,7 @@ The aim of this project was to design and build a low-cost robot based on the in
 * [AISCARA_ControlSystem](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_ControlSystem) - Source codes for AISCARA control system
 * [AISCARA_GUI](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_GUI) - Source codes for AISCARA user interface
 * [docs](https://github.com/Katzoun/AI_SCARA/tree/main/docs) - Misc documentation files 
-* [parts](https://github.com/Katzoun/AI_SCARA/tree/main/parts) - (coming soon)
+* [parts](https://github.com/Katzoun/AI_SCARA/tree/main/parts) - stl files of all components (with list of all parts)
 
 
 ## Mechanical design
@@ -66,8 +66,6 @@ For successful communication between the personal computer and the controller it
 After successful assembly and debugging, the designed robotic structure was subjected to a series of tests aimed at verifying the basic "metrological" characteristics of the robot. The measurements performed were divided into three main categories - repeatability tests, stiffness tests and complex tests, which are a combination of the previous two. The repeatability of the robot was estimated to be within a few tenths of a millimetre based on the tests performed. 
 Again, it should be noted that the measurements made provide only a very basic idea of the metrological characteristics of the proposed solution. The measurement results are influenced not only by the mechanical design but also by the motion control of the robot. A more precise set of validation tests, including a more advanced statistic evaluation, could be addressed in future work. The table below shows the basic technical parameters of the proposed robot.
 
-<center>
-
 | Parameter | Value |
 | ------ | ------ |
 | Horizontal reach (X-Y)  | 400 mm  |
@@ -85,7 +83,7 @@ Again, it should be noted that the measurements made provide only a very basic i
 | Robot weight         | 17 kg |
 | Controller weight          | 8 kg |
 | Build price | approx. 1500 €| 
-</center>
+
 
 <p align="center"><img src="docs/AISCARA_lab.JPG" height="500"></p>
 
