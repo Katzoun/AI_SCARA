@@ -4,7 +4,7 @@ The aim of this project was to design and build a low-cost robot based on the in
 <p align="center"><img src="docs/AISCARAfullrender.png" height="400"></p>
 
 ## Video demontration
-* [AISCARA_Demo](https://youtube.com)
+[![Watch the video](https://i.ytimg.com/vi/5lQ4tVK84JA/default.jpg)](https://youtube.com/watch?v=5lQ4tVK84JA)
 ## Repository Index
 * [AISCARA_ControlSystem](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_ControlSystem) - Source codes for AISCARA control system
 * [AISCARA_GUI](https://github.com/Katzoun/AI_SCARA/tree/main/AISCARA_GUI) - Source codes for AISCARA user interface
